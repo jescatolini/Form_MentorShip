@@ -1,0 +1,242 @@
+*{
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+:root{
+  --hue:218;
+  --bg-body:hsla(var(--hue), 41%, 82%, 1);
+  --bg-header:hsla(var(--hue), 23%, 21%, 1);
+  --bg-top:hsla(6, 89%, 69%, 1);
+  --bg-form:hsla(var(--hue), 0%, 100%, 1);
+  --bg-input:hsla(var(--hue), 24%, 92%, 1);
+
+  font-size: 62.5%;
+
+  --ff-title: 'Staatliches', cursive;
+  --ff-primary: 'Poppins', sans-serif;
+  --fw-primary: 400;
+  --fs-title:clamp(1rem, 1.8rem + 5vw, 3.6rem);
+  --lh-title:clamp(3rem, 3.4rem + 5vw, 4.5rem);
+  --fs-secundary:clamp(1.2rem, 1.4rem + 5vw, 1.6rem);
+  --lh-secundary:clamp(1.6rem, 2rem + 5vw, 2.4rem);
+}
+body{
+  font-size: 1.6rem;
+  background: var(--bg-body);
+  
+}
+form, fieldset, header, .input-wrapper, .col-2, .col-3, .top, .checkbox-wrapper{
+  display: flex;
+  flex-direction: column;
+} 
+header{
+  content: '';
+  background: var(--bg-header);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: var(--bg-form);
+}
+svg{
+  margin-top: 28px;
+}
+.top{
+  position: relative;
+  left: 0;
+  bottom: 0;
+  margin: 0 auto;
+  margin-top: 32px;
+  background: var(--bg-top);
+  width: 100%;
+  padding: 50px 0;
+  border-radius: 20px 20px 0px 0px;
+  flex-direction: row;
+  
+}
+.headers{
+  padding-top: 107px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1, legend{
+  font-family: var(--ff-title);
+  font-weight: var(--fw-primary);
+  text-transform: uppercase;
+  font-size: var(--fs-title);
+  line-height: var(--lh-title);
+}
+header h1, p{
+  color: var(--bg-form);
+}
+p{
+  font-size: var(--fs-secundary);
+  line-height: var(--lh-secundary);
+}
+form{
+  margin: 46.3rem auto;
+  width:100%;
+  gap: 32px;
+  background: var(--bg-form);
+  border-radius: 0px 0px 20px 20px;
+  padding: 3rem 2rem;
+  padding-bottom: 6.1rem;
+}
+fieldset{
+  border: none;
+  gap: 15.87px;
+}
+.top h1{
+  margin: auto;
+  font-size: 2.4rem;
+  line-height: 34px;
+}
+label{
+  margin-bottom: 7.93PX;
+}
+input, textarea, select{
+  background: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  height: 55.53px;
+  width: 100%;
+  padding: 0 24px;
+  color: #C1BCCC;
+}
+.col-2{
+  padding-top: 3.2rem;
+  gap: 15.87px;
+}
+span{
+  margin-left: 9.12px;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #C1BCCC;
+}
+span:hover{
+  color: #5e5b64;
+}
+legend{
+  text-align: center;
+  width: 100%;
+  color: var(--bg-header);
+  padding-bottom: 8px;
+  border-bottom: 1px solid #E6E6F0;;
+  margin-bottom: 32px;
+}
+select{
+  appearance: none;
+  width: 100%;
+}
+textarea{
+  width: 100%;
+  height: 166.59px;
+  padding: 0 24px
+}
+.checkbox-wrapper{
+  position: relative;
+}
+.checkbox-wrapper label{
+  gap: 8px;
+  align-items: center;
+  display: flex;
+  margin: 0;
+}
+.checkbox-wrapper input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 24px;
+  height: 24px
+}
+.checkbox-wrapper label::before{
+  content: '';
+  background: #FAFAFC;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+}
+.checkbox-wrapper input:checked + label::before{
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 460.775 460.775' style='enable-background:new 0 0 460.775 460.775;' xml:space='preserve'%3E%3Cpath d='M285.08,230.397L456.218,59.27c6.076-6.077,6.076-15.911,0-21.986L423.511,4.565c-2.913-2.911-6.866-4.55-10.992-4.55 c-4.127,0-8.08,1.639-10.993,4.55l-171.138,171.14L59.25,4.565c-2.913-2.911-6.866-4.55-10.993-4.55 c-4.126,0-8.08,1.639-10.992,4.55L4.558,37.284c-6.077,6.075-6.077,15.909,0,21.986l171.138,171.128L4.575,401.505 c-6.074,6.077-6.074,15.911,0,21.986l32.709,32.719c2.911,2.911,6.865,4.55,10.992,4.55c4.127,0,8.08-1.639,10.994-4.55 l171.117-171.12l171.118,171.12c2.913,2.911,6.866,4.55,10.993,4.55c4.128,0,8.081-1.639,10.992-4.55l32.709-32.719 c6.074-6.075,6.074-15.909,0-21.986L285.08,230.397z'/%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.checkbox-wrapper input:focus + label::before{
+  outline: 2px solid black;
+}
+.col-3{
+  gap: 10px;
+}
+@media (min-width:500px){
+  
+  .page{
+    max-width: 750px;
+    margin: 0 auto;
+  }
+  .top{
+    max-width: 750px;
+  }
+  .col-3{
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-around;
+}
+.col-2{
+  flex-direction: row;
+  justify-content: space-between;
+}
+#first-name, #last-name{
+  width: clamp(20rem, 20rem + 5vw, 30rem);
+}
+#date{
+  margin-top: 6px;
+}
+.col-3 div:nth-child(1) input{
+  width: clamp(20rem, 20rem + 5vw, 30rem);
+  font-family: var(--ff-primary);
+
+}
+@media (min-width:600px) {
+  form{
+    padding: 3.2rem 6.4rem;
+    padding-bottom: 6.4rem;
+  }
+}
+}
+.col-3 input{
+  width: 100%;
+}
+#date{
+  width: 100%;
+  margin-right: 22px;
+}
+#button{
+  margin-top: 31.74px;
+  font-family: 'Staatliches';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 40px;
+  background: var(--bg-top);
+  border-radius: 8px;
+  cursor: pointer;
+}
+#button:hover{
+  background: #e04a39;;
+}
+
+input:invalid{
+  border: 1px solid red;
+}
